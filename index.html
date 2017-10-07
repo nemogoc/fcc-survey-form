@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <!-- TODO:
-Center form
 Align each item horizontally (table? bootstrap?)
 Standardize Input field lengths
 Improve look of dropdown/input/button (bootstrap?)
@@ -19,56 +18,57 @@ Font?
 
 <body id="main">
 <h1 id="title">Survey Form</h1>
-<form id="survey-form">
-  <br>
-  <p id="description">Please take this brief survey to help us better know our users.</p>
-  <div><label id="name-label" for="name">Name: </label>
-  <input id="name" type="text" placeholder="Enter your name" required>
-  </div>
-  <br>
-  <div><label id="email-label" for="email">Email: </label>
-  <input id="email" type="email" placeholder="Enter your email address" required />
-  </div>
-  <br>
-  <div>
-  <label id="number-label" for="number">Number: </label>
-  <input id="number" type="number" placeholder="Enter your favorite number" min="-99999999" max="99999999" />
-  </div>
-  <br>
-  <div>
-  <label for="dropdown">Do you like this survey?</label>
-  <select id="dropdown">
-    <option value="blank"></option>
-    <option value="like">I like this survey</option>
-    <option value="donotlike">I do not like this survey</option>
-  </select>
-  </div>
-  <br>
-  <div>
-  <label>What most closely describes your gender?</label>
-  <label><input name="gender" type="radio" value="male"> Male <br></label>
-  <label><input name="gender" type="radio" value="female"> Female <br></label>
-  <label><input name="gender" type="radio" value="other"> Other <br></label>
-  </div>
-  <div>
-  <label>How do you commute to work? (Check all that apply)</label>
-  <br>
-  <label><input type="checkbox" name="vehicle" value="walk">Walk <br></label>
-  <label><input type="checkbox" name="vehicle" value="bike"></label>Bike <br>
-  <label><input type="checkbox" name="vehicle" value="car"></label>Car <br>
-  <label><input type="checkbox" name="vehicle" value="subway">Subway <br></label>
-  <label><input type="checkbox" name="vehicle" value="train">Train <br></label>
-  <label><input type="checkbox" name="vehicle" value="helicopter">Helicopter <br></label>
-  <label><input type="checkbox" name="vehicle" value="hitomprice">Private Jet <br></label>
-  <label><input type="checkbox" name="vehicle" value="other">Other <br></label>
-  </div>
-  <br>
-  <label><label for="more-comments">Please enter any additional comments here:</label></label>
-  <br>
-  <textarea id="more-comments" rows="5" cols="30"></textarea>
-  <br>
-  <button id="submit">Submit</button>
-</form>
+<div class="centered">
+  <form id="survey-form">
+    <p id="description">Please take this brief survey to help us better know our users.</p>
+    <div><label id="name-label" for="name">Name: </label>
+      <input id="name" class="form-field" type="text" placeholder="Enter your name" required>
+    </div>
+    <br>
+    <div><label id="email-label" for="email">Email: </label>
+      <input id="email" class="form-field" type="email" placeholder="Enter your email address" required />
+    </div>
+    <br>
+    <div>
+      <label id="number-label" for="number">Number: </label>
+      <input id="number" class="form-field" type="number" placeholder="Enter your favorite number" min="-99999999" max="99999999" />
+    </div>
+    <br>
+    <div>
+      <label for="dropdown">Do you like this survey?</label>
+      <select id="dropdown">
+        <option value selected disabled>Select option</option>
+        <option value="like">I like this survey</option>
+        <option value="donotlike">I do not like this survey</option>
+      </select>
+    </div>
+    <br>
+    <div>
+      <label>What most closely describes your gender?</label>
+      <label><input name="gender" type="radio" value="male"> Male <br></label>
+      <label><input name="gender" type="radio" value="female"> Female <br></label>
+      <label><input name="gender" type="radio" value="other"> Other <br></label>
+    </div>
+    <div>
+      <label>How do you commute to work? (Check all that apply)</label>
+      <br>
+      <label><input type="checkbox" name="vehicle" value="walk">Walk <br></label>
+      <label><input type="checkbox" name="vehicle" value="bike"></label>Bike <br>
+      <label><input type="checkbox" name="vehicle" value="car"></label>Car <br>
+      <label><input type="checkbox" name="vehicle" value="subway">Subway <br></label>
+      <label><input type="checkbox" name="vehicle" value="train">Train <br></label>
+      <label><input type="checkbox" name="vehicle" value="helicopter">Helicopter <br></label>
+      <label><input type="checkbox" name="vehicle" value="hitomprice">Private Jet <br></label>
+      <label><input type="checkbox" name="vehicle" value="other">Other <br></label>
+    </div>
+    <br>
+    <label><label for="more-comments">Please enter any additional comments here:</label></label>
+    <br>
+    <textarea id="more-comments" rows="5" cols="30"></textarea>
+    <br>
+    <button id="submit">Submit</button>
+  </form>
+</div>
 
 <script src='https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js'></script>
 </body>
