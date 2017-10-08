@@ -1,9 +1,12 @@
 .centered {
   width: 75%;
   max-width: 750px;
+  min-width: 530px;
   margin: 0 auto;
 }
-
+.question-row {
+  margin: 10px;
+}
 #main {
   background-color: #4abdac;
   font-family: Roboto, sans-serif;
@@ -14,14 +17,54 @@ h1 {
 p {
   text-align: center;
   font-size: 15pt;
+  padding-top: 20px;
 }
 #survey-form {
   background-color: #dfdce3;
   border-radius: 5px;
 }
-.form-field {
-  width: 300px;
+.form-field { /* stolen from FCC example */
+  height: 20px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
 }
-button {
+#submit { /* stolen from FCC example */
   background-color: #F7B733;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  border: 0px solid;
+}
+#dropdown { /* stolen from FCC example */
+  height: 35px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+  background-color: white;
+}
+.col1{
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+.col2 {
+  display: inline-block;
+  text-align: left;
+  width: 40%;
+  vertical-align: middle;
+}
+.vert {
+  margin-top: -5px;
 }
